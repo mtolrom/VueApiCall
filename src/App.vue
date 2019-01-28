@@ -84,7 +84,7 @@
             upload() {
                 axios({ method: "POST", "url": "http://mekonecampusapi.azurewebsites.net/api/pictures", "data": this.files }).then(result => {
                     console.dir(result.data);
-                    message = result.data;
+                    message : result.data;
                 }, error => {
                     console.error(error);
                 });
